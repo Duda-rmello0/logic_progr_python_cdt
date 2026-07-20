@@ -1,0 +1,33 @@
+'''
+
+def fazer_bolo(opcao_cobertura):
+
+    print("1. Separe os ingredientes necessários: farinha, açúcar, ovos, leite, fermento e manteiga.")
+    print("2. Unte a forma com manteiga.")
+    print("3. Quebre 2 ovos num recipiente, adicione manteiga, açúcar e os misture bem.")
+    print("4. Adicione farinha e leite aos poucos e o fermento.")
+    print("5. Adicione uma colher de chá de fermento e misture tudo muito bem.")
+    print("6. Coloque a massa na forma e depois coloque a forma no forno e deixe assar por 30 minutos.")
+    print("7. Após 30 minutos, retire o bolo do forno.")
+    
+    
+    if opcao_cobertura == "1":
+        resultado = 'O seu bolo está simples e fofinho, perfeito para acompanhar um café!'
+    else:
+        resultado = 'O seu bolo ganhou uma cobertura incrível e caprichada, pronto para uma festa!'
+
+    return resultado
+
+
+
+print("Como deseja finalizar o seu bolo delicioso?")
+print("1 - Bolo simples (Sem cobertura / Tradicional)")
+print("2 - Bolo recheado (Com muita cobertura e confeitos)")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_do_bolo = fazer_bolo(opcao)
+
+print("\nResultado:")
+print(status_do_bolo)
+'''
