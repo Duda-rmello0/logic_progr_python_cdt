@@ -1,0 +1,35 @@
+''''''
+
+def lavar_cabelo(tempo_mascara):
+
+    print("1. Separe os itens necessários: shampoo, condicionador, toalha, pente.")
+    print("2. Abra o chuveiro e molhe o cabelo com água morna ou gelada.")
+    print("3. Aplique o shampoo e massageie levemente o couro cabeludo.")
+    print("4. Enxágue o cabelo muito bem para retirar todo o shampoo do cabelo.")
+    print("5. Aplique uma máscara de hidratação, nutrição ou reconstrução (conforme a nescessidade do cabelo).")
+    print("6. Deixe agir por 3 minutos e penteie o cabelo.")
+    print("7. Após pentear, enxágue muito bem.")
+    print("8. Depois, aplique o condicionador e se necessário, penteie novamente. Após isso, enxágue novamente.")
+    print("9. Seque o cabelo com uma toalha sem esfregar o cabelo.")
+    print("10. Para finalizar, aplique um óleo no cabelo.")
+   
+
+    if tempo_mascara == "1":
+        resultado = 'Seu cabelo foi lavado rapidamente!'
+    else:
+        resultado = 'Seu cabelo recebeu um cuidado completo, hidratado e pronto para pentear!'
+
+    return resultado
+
+
+print("Escolha o tempo de ação da máscara no banho:")
+print("1 - Não passar (pular direto para o condicionador)")
+print("2 - Deixar agir por alguns minutos (uso normal)")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_do_cabelo = lavar_cabelo(opcao)
+
+print("\nResultado:")
+print(status_do_cabelo)
+''''''
