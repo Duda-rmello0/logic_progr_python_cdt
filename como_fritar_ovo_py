@@ -1,0 +1,34 @@
+''''''
+
+def fritar_ovo(opcao_gema):
+
+    print('1. Separe os ingredientes necessários: ovos, óleo, sal e uma frigideira.')
+    print('2. Aqueça a frigideira em fogo médio.')
+    print('3. Adicione um pouco de óleo para esquentar.')
+    print('4. Quebre o ovo e coloque-o na frigideira, evitando quebrar a gema.')
+    print('5. Deixe o ovo fritar por alguns minutos, monitorando o ponto da gema.')
+    print('6. Tempere com sal a gosto.')
+    print('7. Se desejar, adicione outros temperos.')
+    print('8. Quando o ovo estiver frito ao seu gosto, use uma espátula para retirá-lo da frigideira.')
+    print('9. Coloque o ovo frito em um prato.')
+   
+
+    if opcao_gema == "1":
+        resultado = 'Você deixou seu ovo fritando menos tempo, e a gema ficou mole!'
+    else:
+        resultado = 'Você deixou seu ovo fritar ao ponto e já está pronto!'
+
+    return resultado
+
+
+print("Escolha como vai querer a gema:")
+print("1 - Gema mole")
+print("2 - Gema ao ponto")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_do_ovo = fritar_ovo(opcao)
+
+print("\nResultado:")
+print(status_do_ovo)
+''''''

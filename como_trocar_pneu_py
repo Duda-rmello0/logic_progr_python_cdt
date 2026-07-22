@@ -1,0 +1,35 @@
+''''''
+
+def trocar_pneu(opcao_troca):
+
+    print('1. Estacione o carro, ligue o pisca-alerta e puxe o freio de mão.')
+    print('2. Pegue as ferramentas necessárias no porta-malas: estepe, macaco e chave de roda.')
+    print('3. Use a chave de roda para afrouxar as porcas, sem retirá-las.')
+    print('4. Posicione o macaco no local correto sob o chassi do carro.')
+    print('5. Levante o veículo com o macaco até que o pneu furado saia do chão.')
+    print('6. Remova completamente as porcas soltas e retire o pneu furado.')
+    print('7. Encaixe o pneu estepe no eixo e rosqueie as porcas com as mãos.')
+    print('8. Desça o carro com o macaco até o pneu tocar o chão e remova o macaco.')
+    print('9. Use a chave de roda para dar o aperto final e firme em todas as porcas.')
+    print('10. Guarde o pneu furado e as ferramentas no porta-malas para finalizar.')
+   
+
+    if opcao_troca == "1":
+        resultado = 'Você trocou sozinho e já pode dirrigir!'
+    else:
+        resultado = 'Você chamou a assistência para trocar e seu problema já foi resolvido!'
+
+    return resultado
+
+
+print("Escolha como vai trocar o pneu:")
+print("1 - Trocar o pneu sozinho")
+print("2 - Chamar a assistência para trocara o pneu")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_do_carro = trocar_pneu(opcao)
+
+print("\nResultado:")
+print(status_do_carro)
+''''''

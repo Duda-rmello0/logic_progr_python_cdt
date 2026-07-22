@@ -1,0 +1,23 @@
+[
+{
+        "Nome completo": "Eric Renan",
+        "idade": "17 anos",
+        "CEP": "089880-100",
+        "ResgMatr": "987799",
+        "E-Mail": "ericrenan@gmail.com"
+    },
+    {
+        "Nome completo": "Miguel Mendes",
+        "idade": "17 anos",
+        "CEP": "05861-260",
+        "ResgMatr": "976767",
+        "E-Mail": "migueldiasmendes9@gmail.com"
+    },
+    {
+        "Nome completo": "Carlos Pereira",
+        "idade": "15 anos",
+        "CEP": "09876-000",
+        "ResgMatr": "948867",
+        "E-Mail": "carlospereira@gmail.com"
+    }
+]

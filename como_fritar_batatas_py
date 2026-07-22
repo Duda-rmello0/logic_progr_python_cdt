@@ -1,0 +1,35 @@
+''''''
+
+def fritar_batatas(opcao_molho):
+
+    print('1. Separe os ingredientes necessários: batatas, sal, óleo.')
+    print('2. Descasque as batatas e corte-as em palitos.')
+    print('3. Aqueça o óleo em uma panelaa uma temperatura média-alta.')
+    print('4. Coloque as batatas cortadas no óleo quente para fritar.')
+    print('5. Frite até que fiquem douradas e crocantes, mexendo ocasionalmente.')
+    print('6. Retire as batatas do óleo com cuidado.')
+    print('7. Coloque-as em um prato forrado com papel toalha para absorver o excesso de óleo.')
+    print('8. Tempere as batatas fritas com sal a gosto.')
+    print('9. Se desejar, adicione outros temperos, ervas, queijo cheddar ou bacon.')
+    print('10. Sirva como acompanhamento ou petisco e aproveite sua batata crocante!')
+   
+
+    if opcao_molho == "1":
+        resultado = 'Você escolheu batatas sem molho!'
+    else:
+        resultado = 'Você escolheu batatas com ketchup!'
+
+    return resultado
+
+
+print("Escolha o molho que você vai querer para acompanhar suas batatas:")
+print("1 - Sem molho ")
+print("2 - Ketchup")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_das_batatas = fritar_batatas(opcao)
+
+print("\nResultado:")
+print(status_das_batatas)
+''''''
