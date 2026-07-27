@@ -1,0 +1,29 @@
+''''''
+
+def fazer_hamburguer(opcao_combo):
+
+    print("1. Corte o pão ao meio e sele as duas partes em uma frigideira.")
+    print("2. Grelar o haburguer até o ponto.")
+    print("3. Adicione uma fatia de queijo por cima do hamburguer para derretê-la.")
+    print("4. Monte o lanche com o pão e o hamburguer com queijo derretido.")
+    print("5. Adicione a salada e os molhos que desejar.")
+    print("6. Termine de montar e já está pronto!")
+
+    if opcao_combo == "1":
+        resultado = 'Você escolheu somente o lanche, sem o combo!'
+    else:
+        resultado = 'Você escolheu o combo completo: hamburguer, batata frita e refrigeirante!'
+
+    return resultado
+
+
+print("1 - Somente lanche")
+print("2 - Combo completo")
+
+opcao = input("Digite o número da opção (1 ou 2): ")
+
+status_do_hamburguer = fazer_hamburguer(opcao)
+
+print("\nResultado:")
+print(status_do_hamburguer)
+''''''

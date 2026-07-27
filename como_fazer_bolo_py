@@ -1,30 +1,30 @@
-''''''
 
-def fazer_bolo(opcao_cobertura):
+def fazer_bolo(opcao_sabor):
+    if opcao_sabor == "1":
+        sabor = "Chocolate"
+    elif opcao_sabor == "2":
+        sabor = "Baunilha"
+    else:
+        sabor = "Sabor Tradicional"
 
-    print("1. Separe os ingredientes necessários: farinha, açúcar, ovos, leite, fermento e manteiga.")
+    print(f"1. Separe os ingredientes necessários: {sabor}, farinha, açúcar, ovos, leite, fermento e manteiga.")
     print("2. Unte a forma com manteiga.")
     print("3. Quebre 2 ovos num recipiente, adicione manteiga, açúcar e os misture bem.")
     print("4. Adicione farinha e leite aos poucos e o fermento.")
-    print("5. Adicione uma colher de chá de fermento e misture tudo muito bem.")
-    print("6. Coloque a massa na forma e depois coloque a forma no forno e deixe assar por 30 minutos.")
-    print("7. Após 30 minutos, retire o bolo do forno.")
+    print(f"5. Adicione o sabor escolhido: {sabor}")
+    print("6. Adicione uma colher de chá de fermento e misture tudo muito bem.")
+    print("7. Coloque a massa na forma e depois coloque a forma no forno e deixe assar por 30 minutos.")
+    print("8. Após 30 minutos, retire o bolo do forno.")
 
-    if opcao_cobertura == "1":
-        resultado = 'O seu bolo está simples está pronto!'
-    else:
-        resultado = 'O seu bolo recheado está pronto!'
-
-    return resultado
+    return f"O seu bolo de {sabor} está pronto!"
 
 
-print("1 - Bolo simples (Sem cobertura)")
-print("2 - Bolo recheado")
+print("Escolha o sabor do bolo:")
+print("1 - Chocolate")
+print("2 - Baunilha")
+sabor_escolhido = input("Digite o número do sabor desejado (1 ou 2): ")
 
-opcao = input("Digite o número da opção (1 ou 2): ")
-
-status_do_bolo = fazer_bolo(opcao)
+status_do_bolo = fazer_bolo(sabor_escolhido)
 
 print("\nResultado:")
 print(status_do_bolo)
-''''''
