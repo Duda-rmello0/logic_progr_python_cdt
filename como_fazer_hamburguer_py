@@ -17,7 +17,6 @@ def fazer_hamburguer(opcao_combo):
         resultado = 'Você escolheu só o hamburguer e o refrigeirante'   
 
     return resultado
-    
 
 print("1 - Somente lanche")
 print("2 - Combo completo")
